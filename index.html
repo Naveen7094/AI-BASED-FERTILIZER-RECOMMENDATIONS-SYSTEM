@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Fertilizer Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌱 AI Based Fertilizer Recommendation</h1>
+
+    <label>Nitrogen (N)</label>
+    <input type="number" id="n" placeholder="Enter Nitrogen value">
+
+    <label>Phosphorus (P)</label>
+    <input type="number" id="p" placeholder="Enter Phosphorus value">
+
+    <label>Potassium (K)</label>
+    <input type="number" id="k" placeholder="Enter Potassium value">
+
+    <label>Crop Type</label>
+    <select id="crop">
+        <option value="">Select Crop</option>
+        <option value="rice">Rice</option>
+        <option value="wheat">Wheat</option>
+        <option value="maize">Maize</option>
+        <option value="cotton">Cotton</option>
+        <option value="sugarcane">Sugarcane</option>
+    </select>
+
+    <button onclick="recommendFertilizer()">Get Recommendation</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
